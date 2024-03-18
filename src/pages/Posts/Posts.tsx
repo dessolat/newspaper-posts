@@ -45,10 +45,10 @@ const Posts = () => {
         {isLoading && posts.length > 0 && <Loader />}
 
 				{/* Div for detecting intersection with screen bottom */}
-        {currentPage < 5 && <NewPostFetchDivider onIntersect={handleBottomPage} />}
+        {currentPage < 5 && !isLoading && <NewPostFetchDivider onIntersect={handleBottomPage} />}
 
 				{/* Render more btn after page >= 5 */}
-        {currentPage >= 5 && (
+        {currentPage >= 5 && !isLoading && (
           <Button onClick={handleBottomPage} style={{ margin: '1rem 0' }}>
             Загрузить ещё
           </Button>
