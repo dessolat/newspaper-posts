@@ -1,0 +1,15 @@
+.btn {
+	cursor: pointer;
+	background-color: transparent;
+	color: black;
+	border: 1px solid var(--primary-color);
+	padding: 8px 15px;
+	border-radius: 3px;
+	transition: all .3s;
+	font: inherit;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+	color: white;
+}

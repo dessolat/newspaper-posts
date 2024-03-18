@@ -1,0 +1,24 @@
+.post {
+  padding: 1rem 2rem;
+  border: 1px solid lightgray;
+  cursor: pointer;
+	transition: background-color .3s;
+}
+
+.post:hover {
+  background-color: var(--hover-color);
+}
+
+.post + .post {
+  margin-top: 1.5rem;
+}
+
+.postTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.postBody {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
